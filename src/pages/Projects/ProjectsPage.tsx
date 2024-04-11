@@ -9,6 +9,7 @@ import projects from "../../services/GetProjects";
 import Project from "./../../models/Project";
 // Styles
 import "../../main.css";
+import styles from "./project.module.css";
 
 const ProjectsPage = () => {
   const [project, setProject] = useState<Project>();
@@ -55,7 +56,6 @@ const ProjectsPage = () => {
             >
               {project?.state}
             </span>
-
             <div className="rows" style={{ marginTop: "0px", gap: "20px" }}>
               <div className="rows" style={{ gap: "10px" }}>
                 <IoBedOutline size={30} color={`var(--dark)`} />
@@ -102,7 +102,19 @@ const ProjectsPage = () => {
                 <span className="hero semi-bold">{project?.sell}</span>
               </div>
             </div>
-            <button className="btn link-btn">Fund Project</button>
+            <div>
+              <span className="semi-bold">Funding Collected: </span>
+              <progress
+                className={styles.progress}
+                value={
+                  project?.currentFunding && project.fundingGoal
+                    ? (project.currentFunding / project.fundingGoal) * 100
+                    : "70"
+                }
+                max="100"
+              />
+              <button className="btn link-btn">Fund Project</button>{" "}
+            </div>
           </div>
         </div>
       </div>

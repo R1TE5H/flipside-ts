@@ -201,15 +201,8 @@ const Landing = () => {
         </div>
         <LandingProjects />
       </div>
-      <div className="section ">
-        <div
-          className={`center columns`}
-          style={{
-            border: `3px solid var(--primary)`,
-            borderRadius: "20px",
-            padding: "50px 10px",
-          }}
-        >
+      <div className="section center ">
+        <div className={[`center columns`, styles.subscribe].join(" ")}>
           <p style={{ textAlign: "center", marginBottom: "50px" }}>
             <span className="hero">Subscribe to our News Letter</span>
             <br />

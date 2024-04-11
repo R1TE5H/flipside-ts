@@ -7,6 +7,10 @@
   --third: #e2f4ff;
   --light: #fff;
   --dark: #000;
+  --greenLight: #c4ffb8;
+  --greenDark: #199500;
+  --redLight: #ffb8b8;
+  --redDark: #950000;
 }
 
 body {

@@ -19,6 +19,30 @@
   overflow: hidden;
 }
 
+.financeCard {
+  display: flex;
+}
+
+.finances {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.growth {
+  padding: 5px 10px;
+  border-radius: 50px;
+  font-size: 12px;
+}
+
+.graphContainer {
+  flex: 1;
+  border-radius: 20px;
+  padding: 10px;
+  border: 1px solid var(--third);
+}
+
 .project {
   padding: 10px;
   margin: 20px;

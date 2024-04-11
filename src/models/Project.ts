@@ -8,4 +8,7 @@ export default interface Project {
   beds: number;
   baths: number;
   footage: string;
+  renoProgress?: number;
+  fundingGoal?: number;
+  currentFunding?: number;
 }

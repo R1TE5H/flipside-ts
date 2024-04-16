@@ -119,9 +119,25 @@ const ProjectsPage = () => {
         </div>
       </div>
       <div className="section">
-        <h1>Before and After Mock Ups</h1>
-        <h1>Mock up Plans</h1>
-        <h1>Expenses</h1>
+        <h1>Current Pictures</h1>
+        <h1>Expenses and Mock up Plans</h1>
+      </div>
+      <div
+        className="section"
+        style={{
+          display: "grid",
+          gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
+          alignItems: "center",
+        }}
+      >
+        <div className="gridItems">
+          Expenses Chart with complete break down fo how the money will be spent
+        </div>
+        <img
+          src={project?.image}
+          className={[styles.propertyProjections, "gridItems"].join(" ")}
+          alt="Pictures"
+        />
       </div>
     </>
   );

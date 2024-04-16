@@ -14,3 +14,9 @@
   background-color: var(--secondary);
   border-radius: 4px;
 }
+
+.propertyProjections {
+  width: clamp(300px, 100%, 600px);
+  height: clamp(300px, 30rem, 600px);
+  border-radius: 20px;
+}

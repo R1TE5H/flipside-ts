@@ -29,7 +29,7 @@ const LandingProjects = () => {
         }}
         effect={"fade"}
         loop={true}
-        navigation={width > 960 ? true : false}
+        navigation={width > 1100 ? true : false}
         modules={[Autoplay, EffectFade, Navigation]}
         className="mySwiper"
         style={{

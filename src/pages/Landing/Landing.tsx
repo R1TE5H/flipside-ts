@@ -80,7 +80,7 @@ const Landing = () => {
             >
               <p style={{ marginBottom: "50px" }}>
                 <span className="lg-txt">
-                  AFFORDABLE REAL ESTATE INVESTING FOR EVERYONE
+                  Affordable real estate investing for everyone
                 </span>
                 <br />
                 <br />
@@ -102,7 +102,7 @@ const Landing = () => {
           </div>
         </div>
       </div>
-      <div className="center  columns" style={{ textAlign: "center" }}>
+      <div className="center columns" style={{ textAlign: "center" }}>
         <p className={styles.hero}>
           <span className="hero">Your Gateway into Real Estate</span>
           <br />
@@ -113,40 +113,47 @@ const Landing = () => {
           </span>
         </p>
       </div>
-      <div
-        className={`section center ${styles.cardContainer} ${
-          width > 690 ? "rows" : "columns"
-        }`}
-        style={{ alignItems: "stretch" }}
-      >
-        <div className={styles.person}>
-          <p className="md-txt bold">Investor</p>
-          <p className="sm-txt">
-            Fuel transformative residential renovation projects and unlock the
-            full potential of real estate investing.
-          </p>
-          <p className="sm-txt">Start investing for as little as $100.</p>
-        </div>
-        <div className={styles.person}>
-          <p className="md-txt bold">Homeowner</p>
-          <p className="sm-txt">
-            Quickly secure funding for your renovations and experience a rapid
-            and efficient transformation of your property.
-          </p>
-          <p className="sm-txt">Unlock your property's full potential today.</p>
-        </div>
-      </div>
-      <div className="center section btn-container">
+      <div className="center  btn-container" style={{ marginBottom: "30px" }}>
         <Link className="btn link-btn" to="/user/sign-up">
           Create an Account
         </Link>
       </div>
+      <div
+        className={`section center ${styles.cardContainer} ${
+          width > 690 ? "rows" : "columns"
+        }`}
+        style={{ alignItems: "stretch", background: `var(--third)` }}
+      >
+        <div className={styles.person}>
+          <div style={{ padding: "20px" }}>
+            <p className="md-txt bold">Investor</p>
+            <p className="sm-txt">
+              Fuel transformative residential renovation projects and unlock the
+              full potential of real estate investing.
+            </p>
+            <p className="sm-txt">Start investing for as little as $100.</p>
+          </div>
+        </div>
+        <div className={styles.person}>
+          <div style={{ padding: "20px" }}>
+            <p className="md-txt bold">Homeowner</p>
+            <p className="sm-txt">
+              Quickly secure funding for your renovations and experience a rapid
+              and efficient transformation of your property.
+            </p>
+            <p className="sm-txt">
+              Unlock your property's full potential today.
+            </p>
+          </div>
+        </div>
+      </div>
+
       <div style={{ marginBottom: "90px" }}>
         <LocationBars />
       </div>
       <div
         className={`section  card-container ${
-          width > 690 ? "rows" : "columns"
+          width > 1015 ? "rows" : "columns"
         }`}
       >
         <div>
@@ -160,10 +167,7 @@ const Landing = () => {
               estate.
             </span>
           </p>
-          <div
-            className={styles.benefitContainer}
-            style={{ padding: `${width > 600 ? "40px" : "20px"}` }}
-          >
+          <div className={styles.benefitContainer}>
             {benefits.map((e, index) => (
               <div
                 key={index}
@@ -250,7 +254,6 @@ const Landing = () => {
           </Link>
         </div>
       </div>
-
       <div className=" center">
         <InfiniteBanner />
       </div>

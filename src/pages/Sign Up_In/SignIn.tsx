@@ -81,7 +81,7 @@ const SignIn = () => {
                 className={styles.submit}
                 style={{ width: "250px", margin: "20px 0" }}
               >
-                Create Account
+                Log In
               </button>
             </div>
             <span className="semi-bold center">

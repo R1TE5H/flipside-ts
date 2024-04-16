@@ -10,7 +10,7 @@ const DesktopLanding = () => {
     { path: "/projects", title: "Projects" },
     { path: "/portfolio", title: "Portfolio" },
     { path: "/user/sign-up", title: "Create Account" },
-    { path: "/user/sign-in", title: "Log In" },
+    { path: "/user/sign-in", title: "Sign In" },
   ];
 
   // Implementing the Scrolling Feature
@@ -59,6 +59,7 @@ const DesktopLanding = () => {
           {links.map((link, index) => (
             <Link
               key={index}
+              style={{ fontWeight: "600" }}
               className={[
                 "sm-txt",
                 styles.text,

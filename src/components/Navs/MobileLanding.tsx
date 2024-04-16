@@ -15,7 +15,7 @@ const MobileLanding = () => {
     { path: "/projects", title: "Projects" },
     { path: "/portfolio", title: "Portfolio" },
     { path: "/user/sign-up", title: "Create Account" },
-    { path: "/user/sign-in", title: "Log In" },
+    { path: "/user/sign-in", title: "Sign In" },
   ];
 
   // Implementing the Scrolling Feature
